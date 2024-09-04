@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
     this.http.get('http://localhost:5000/api/users').subscribe({ // endereço da API
       next: response => this.users = response,
       error: error => console.log(error),
-      complete: () => console.log('Request has completed. Congratulations Mateus!')
+      complete: () => console.log('Request has completed. Congratulations user!')
     });
   }
 }
